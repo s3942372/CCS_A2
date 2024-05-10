@@ -9,19 +9,25 @@
 </head>
 
 <style>
+    /* Helps me ensure that the background and webpage in general looks the way I want it. */
     html {
     height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Extra confusion and chaos since it's the same image as the ones getting glitched and scrambled. */
     background-image: url('/image/beach.jpg');
     }
+
+    /* Since it's a 16:9 image I decided to divide the grids the same way. */
     .grid {
         display: grid;
         grid-template-columns: repeat(16, 64px);
         grid-template-rows: repeat(9, 64px);
     }
+
+    /* Had to have this so that the grids stayed together and were not separated to create the illusion of normality before anything is triggered. */
     .cell {
         width: 100px;
         height: 100px;
@@ -32,6 +38,8 @@
 
 <body>
     <div class="grid" id="grid"></div>
+
+    <!-- The worst button I've ever made in my life, but this allows for it to be extra chaotic. -->
     <button id="shuffleButton" onclick="shuffle()" style="width: 200%; font-size: 25px; text-align: auto; background-color: deeppink;">Click here or make a sound, a loud sound.</button>
     <script src="script.js"></script>
 </body>
