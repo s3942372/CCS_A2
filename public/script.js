@@ -187,3 +187,6 @@ function glitchify(data, chunk_max, repeats) {
     const result = front + back;
     return repeats === 0 ? result : glitchify(result, chunk_max, repeats - 1);
 }
+
+// Sorry, the laptop is having too many issues and I want to upload this before it decides to die and take everything down with it in the process.
+// If these notes are still here that probably means the laptop did just that and I couldn't update.
